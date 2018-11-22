@@ -9,9 +9,12 @@
 		<script type="text/javascript" src="https://jam2.sapjam.com/assets/feed_widget_v1.js"></script>
 		<script type="text/javascript">
 		sapjam.feedWidget.init("https://jam2.sapjam.com/c/sap.com/widget/v1/feed", "sf");
-		//var w = sapjam.feedWidget.create("myDiv", {type: "follows", avatar: false, post_mode: "inline", reply_mode: "inline"});
-		
+		var w = sapjam.feedWidget.create("myDiv", {type: "follows", avatar: false, post_mode: "inline", reply_mode: "inline"});
+		window.onload = function (){
 	    alert(jamApp.currentUser.attributes.FirstName)
+}(); 
+			
+			
 	    </script>
 
 	</body>
